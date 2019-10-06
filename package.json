@@ -1,0 +1,38 @@
+{
+  "name": "CinemaApi",
+  "version": "1.0.0",
+  "description": "Api that allows you to book tickets for a movie in our cinema",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "10.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustynaKop/CinemaApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JustynaKop/CinemaApp/issues"
+  },
+  "homepage": "https://github.com/JustynaKop/CinemaApp#readme",
+  "dependencies": {
+    "@hapi/joi": "^16.0.1",
+    "bcrypt": "^3.0.6",
+    "compression": "^1.7.4",
+    "config": "^3.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "helmet": "^3.21.0",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.7.1",
+    "node-fetch": "^2.6.0"
+  }
+}
