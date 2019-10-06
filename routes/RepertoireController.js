@@ -72,4 +72,25 @@ router.post('/', validatePostData, checkValidation, async (req, res) => {
     }
 });
 
+router.post('/insertMany', async (req, res) => {
+    try {
+        for (let x = 0; x < req.body.repertoires.length; x++)
+        {
+            let repertoire = new Repertoire({ 
+                cinemaHallId: req.body.repertoires[x].cinemaHallId,
+                movieId: req.body.repertoires[x].movieId,
+                displayDateTime: req.body.repertoires[x].displayDateTime,
+                baseTicketPrice: req.body.repertoires[x].baseTicketPrice
+            });
+            await repertoire.save();
+        }
+
+        return res.status(200).json({ status: "sucess" });
+    }
+    catch(ex) {
+        console.log(ex);
+        return res.status(500).json({ status: "requestFailed", errors: ['There was an unhadled error while processing the request.'] });
+    }
+});
+
 module.exports = router;
