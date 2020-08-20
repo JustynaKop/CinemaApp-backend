@@ -22,7 +22,7 @@
   "homepage": "https://github.com/JustynaKop/CinemaApp#readme",
   "dependencies": {
     "@hapi/joi": "^16.0.1",
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "compression": "^1.7.4",
     "config": "^3.2.2",
     "cors": "^2.8.5",
